@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  app:
+    build: ./
+    container_name: cycloid
+    entrypoint: ./run-tests.sh
+    volumes:
+      - ${PWD}/pkg:/cycloid
