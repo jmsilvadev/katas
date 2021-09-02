@@ -1,0 +1,14 @@
+=== RUN   TestChop
+--- FAIL: TestChop (0.00s)
+    katas_test.go:18: Got and Expected are not equals. Got: -1, expected: 0
+    katas_test.go:18: Got and Expected are not equals. Got: -1, expected: 0
+    katas_test.go:18: Got and Expected are not equals. Got: -1, expected: 1
+    katas_test.go:18: Got and Expected are not equals. Got: -1, expected: 2
+    katas_test.go:18: Got and Expected are not equals. Got: -1, expected: 0
+    katas_test.go:18: Got and Expected are not equals. Got: -1, expected: 1
+    katas_test.go:18: Got and Expected are not equals. Got: -1, expected: 2
+    katas_test.go:18: Got and Expected are not equals. Got: -1, expected: 3
+FAIL
+coverage: 100.0% of statements
+FAIL	github.com/jmsilvadev/cycloid/katas	0.002s
+FAIL
