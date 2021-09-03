@@ -1,5 +1,0 @@
-=== RUN   TestChop
---- PASS: TestChop (0.00s)
-PASS
-coverage: 100.0% of statements
-ok  	github.com/jmsilvadev/cycloid/katas	0.002s	coverage: 100.0% of statements

@@ -1,0 +1,3 @@
+.vscode
+pkg/tests/outputs/*
+pkg/tests/coverage/*
