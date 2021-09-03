@@ -8,9 +8,22 @@ type scenarios []struct {
 	expected   int
 }
 
-func TestChop(t *testing.T) {
+func TestChopIterable(t *testing.T) {
 
 	kata := NewIterable()
+
+	for _, sc := range helperScenario() {
+		got := kata.chop(sc.subject, sc.listValues)
+		if got != sc.expected {
+			t.Errorf("Got and Expected are not equals. Got: %v, expected: %v", got, sc.expected)
+		}
+
+	}
+}
+
+func TestChopRecursive(t *testing.T) {
+
+	kata := NewRecursive()
 
 	for _, sc := range helperScenario() {
 		got := kata.chop(sc.subject, sc.listValues)
