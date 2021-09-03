@@ -81,8 +81,22 @@ func NewIterable() *IterableKata <span class="cov8" title="1">{
 }</span>
 
 func (k *IterableKata) chop(subject int, listValues []int) int <span class="cov8" title="1">{
-        return -1
-}</span>
+        stPos := 0
+        endPos := len(listValues) - 1
+
+        for stPos &lt;= endPos </span><span class="cov8" title="1">{
+                midPos := (stPos + endPos) / 2
+                if listValues[midPos] == subject </span><span class="cov8" title="1">{
+                        return midPos
+                }</span>
+                <span class="cov8" title="1">if subject &gt; listValues[midPos] </span><span class="cov8" title="1">{
+                        stPos = midPos + 1
+                        continue</span>
+                }
+                <span class="cov8" title="1">endPos = midPos - 1</span>
+        }
+        <span class="cov8" title="1">return -1</span>
+}
 </pre>
 		
 		</div>
