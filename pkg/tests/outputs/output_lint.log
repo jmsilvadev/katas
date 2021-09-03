@@ -1,3 +1,0 @@
-katas/katas.go:3:6: exported type IKata02 should have comment or be unexported
-katas/katas.go:7:6: exported type IterableKata should have comment or be unexported
-katas/katas.go:9:1: exported function NewIterable should have comment or be unexported
