@@ -1,12 +1,13 @@
 package recursive
 
-type RecursiveKata struct{}
+//Kata get the concrete object to manipualte the Kata recursive
+type Kata struct{}
 
-func (k *RecursiveKata) chop(subject int, listValues []int) int {
+func (k *Kata) chop(subject int, listValues []int) int {
 	return k.chopRecursive(subject, listValues, 0, len(listValues)-1)
 }
 
-func (k *RecursiveKata) chopRecursive(subject int, listValues []int, stPos int, endPos int) int {
+func (k *Kata) chopRecursive(subject int, listValues []int, stPos int, endPos int) int {
 	if stPos > endPos {
 		return -1
 	}

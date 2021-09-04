@@ -1,13 +1,15 @@
 package helpers
 
-type scenarios []struct {
+//Scenarios struct of scenarios
+type Scenarios []struct {
 	Subject    int
 	ListValues []int
 	Expected   int
 }
 
-func HelperScenario() scenarios {
-	return scenarios{
+//HelperScenario gets an array of scenarios to use with tests
+func HelperScenario() Scenarios {
+	return Scenarios{
 		{
 			Subject:    3,
 			ListValues: []int{},

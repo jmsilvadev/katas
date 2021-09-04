@@ -1,8 +1,9 @@
 package iterable
 
-type IterableKata struct{}
+//Kata get the concrete object to manipualte the Kata Iterable
+type Kata struct{}
 
-func (k *IterableKata) chop(subject int, listValues []int) int {
+func (k *Kata) chop(subject int, listValues []int) int {
 	stPos := 0
 	endPos := len(listValues) - 1
 	for stPos <= endPos {
