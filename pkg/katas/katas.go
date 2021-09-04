@@ -3,7 +3,7 @@ package katas
 import (
 	"github.com/jmsilvadev/cycloid/katas/internal/iterable"
 	"github.com/jmsilvadev/cycloid/katas/internal/recursive"
-	recursivereference "github.com/jmsilvadev/cycloid/katas/internal/recursive_refrence"
+	recursivereference "github.com/jmsilvadev/cycloid/katas/internal/recursive_reference"
 	slicerecursive "github.com/jmsilvadev/cycloid/katas/internal/slice_recursive"
 )
 
