@@ -4,6 +4,7 @@ import (
 	"github.com/jmsilvadev/cycloid/katas/internal/iterable"
 	"github.com/jmsilvadev/cycloid/katas/internal/recursive"
 	recursivereference "github.com/jmsilvadev/cycloid/katas/internal/recursive_refrence"
+	slicerecursive "github.com/jmsilvadev/cycloid/katas/internal/slice_recursive"
 )
 
 //IKata02 Kata interface to implements methods to manipulate kata structures
@@ -24,4 +25,9 @@ func NewRecursive() *recursive.Kata {
 //NewRecursiveReference gets a Kata recursive object
 func NewRecursiveReference() *recursivereference.Kata {
 	return &recursivereference.Kata{}
+}
+
+//NewRecursiveSlice gets a Kata recursive object
+func NewRecursiveSlice() *slicerecursive.Kata {
+	return &slicerecursive.Kata{}
 }
