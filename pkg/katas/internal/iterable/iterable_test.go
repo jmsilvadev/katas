@@ -8,7 +8,7 @@ import (
 
 func TestChopIterable(t *testing.T) {
 
-	kata := &IterableKata{}
+	kata := &Kata{}
 
 	for i, sc := range helpers.HelperScenario() {
 		got := kata.chop(sc.Subject, sc.ListValues)
