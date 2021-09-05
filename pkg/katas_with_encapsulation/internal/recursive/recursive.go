@@ -3,7 +3,8 @@ package recursive
 //Kata get the concrete object to manipualte the Kata recursive
 type Kata struct{}
 
-func (k *Kata) chop(subject int, listValues []int) int {
+//Chop get the position of subject in a list of values using recursive way
+func (k *Kata) Chop(subject int, listValues []int) int {
 	return k.chopRecursive(subject, listValues, 0, len(listValues)-1)
 }
 
