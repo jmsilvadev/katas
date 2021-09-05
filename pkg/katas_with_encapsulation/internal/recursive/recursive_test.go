@@ -1,9 +1,9 @@
-package slicerecursive
+package recursive
 
 import (
 	"testing"
 
-	"github.com/jmsilvadev/cycloid/katas_with_internals/internal/helpers"
+	"github.com/jmsilvadev/cycloid/katas_with_encapsulation/internal/helpers"
 )
 
 func TestChopRecursive(t *testing.T) {

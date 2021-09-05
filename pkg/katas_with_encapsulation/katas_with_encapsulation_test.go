@@ -1,4 +1,4 @@
-package kataswithinternals
+package kataswithencapsulation
 
 import (
 	"reflect"

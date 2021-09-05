@@ -1,15 +1,14 @@
-package iterable
+package slicerecursive
 
 import (
 	"testing"
 
-	"github.com/jmsilvadev/cycloid/katas_with_internals/internal/helpers"
+	"github.com/jmsilvadev/cycloid/katas_with_encapsulation/internal/helpers"
 )
 
-func TestChopIterable(t *testing.T) {
+func TestChopRecursive(t *testing.T) {
 
 	kata := &Kata{}
-
 	for i, sc := range helpers.HelperScenario() {
 		got := kata.Chop(sc.Subject, sc.ListValues)
 		if got != sc.Expected {
