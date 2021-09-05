@@ -1,15 +1,15 @@
-package katas
+package kataswithinternals
 
 import (
-	"github.com/jmsilvadev/cycloid/katas/internal/iterable"
-	"github.com/jmsilvadev/cycloid/katas/internal/recursive"
-	recursivereference "github.com/jmsilvadev/cycloid/katas/internal/recursive_reference"
-	slicerecursive "github.com/jmsilvadev/cycloid/katas/internal/slice_recursive"
+	"github.com/jmsilvadev/cycloid/katas_with_internals/internal/iterable"
+	"github.com/jmsilvadev/cycloid/katas_with_internals/internal/recursive"
+	recursivereference "github.com/jmsilvadev/cycloid/katas_with_internals/internal/recursive_reference"
+	slicerecursive "github.com/jmsilvadev/cycloid/katas_with_internals/internal/slice_recursive"
 )
 
 //IKata02 Kata interface to implements methods to manipulate kata structures
 type IKata02 interface {
-	chop(subject int, listValues []int) int
+	Chop(subject int, listValues []int) int
 }
 
 //NewIterable gets a Kata iterable object

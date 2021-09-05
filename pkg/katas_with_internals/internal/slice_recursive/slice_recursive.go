@@ -3,7 +3,8 @@ package slicerecursive
 //Kata get the concrete object to manipualte the Kata slicing recursive
 type Kata struct{}
 
-func (k *Kata) chop(subject int, listValues []int) int {
+//Chop get the position of subject in a list of values using slicing way
+func (k *Kata) Chop(subject int, listValues []int) int {
 	return k.chopSlice(subject, listValues, 0)
 }
 

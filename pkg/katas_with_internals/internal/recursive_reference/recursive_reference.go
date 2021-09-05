@@ -1,9 +1,10 @@
 package recursivereference
 
-//Kata get the concrete object to manipualte the Kata recursive by reference
+//Kata get the concrete object to manipulate the Kata recursive by reference
 type Kata struct{}
 
-func (k *Kata) chop(subject int, listValues []int) int {
+//Chop get the position of subject in a list of values using recursive reference way
+func (k *Kata) Chop(subject int, listValues []int) int {
 	return k.chopRecursiveReference(subject, &listValues, 0, len(listValues)-1)
 }
 

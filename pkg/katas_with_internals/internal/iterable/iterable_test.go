@@ -1,16 +1,17 @@
-package recursive
+package iterable
 
 import (
 	"testing"
 
-	"github.com/jmsilvadev/cycloid/katas/internal/helpers"
+	"github.com/jmsilvadev/cycloid/katas_with_internals/internal/helpers"
 )
 
-func TestChopRecursive(t *testing.T) {
+func TestChopIterable(t *testing.T) {
 
 	kata := &Kata{}
+
 	for i, sc := range helpers.HelperScenario() {
-		got := kata.chop(sc.Subject, sc.ListValues)
+		got := kata.Chop(sc.Subject, sc.ListValues)
 		if got != sc.Expected {
 			t.Errorf("Got and Expected are not equals. Iteration: %v, Got: %v, expected: %v", i, got, sc.Expected)
 		}
