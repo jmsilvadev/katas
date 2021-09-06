@@ -3,7 +3,7 @@ package e2ekataswithinternals
 import (
 	"testing"
 
-	kataswithinternals "github.com/jmsilvadev/cycloid/katas_with_encapsulation"
+	kataswithinternals "github.com/jmsilvadev/cycloid/katas02_with_encapsulation"
 )
 
 func TestE2EKastasWithInternalsUsability(t *testing.T) {
