@@ -3,10 +3,10 @@ package e2ekatas
 import (
 	"testing"
 
-	"github.com/jmsilvadev/cycloid/katas/iterable"
-	"github.com/jmsilvadev/cycloid/katas/recursive"
-	recursivereference "github.com/jmsilvadev/cycloid/katas/recursive_reference"
-	slicerecursive "github.com/jmsilvadev/cycloid/katas/slice_recursive"
+	"github.com/jmsilvadev/cycloid/katas02/iterable"
+	"github.com/jmsilvadev/cycloid/katas02/recursive"
+	recursivereference "github.com/jmsilvadev/cycloid/katas02/recursive_reference"
+	slicerecursive "github.com/jmsilvadev/cycloid/katas02/slice_recursive"
 )
 
 func TestE2EKatasUsability(t *testing.T) {

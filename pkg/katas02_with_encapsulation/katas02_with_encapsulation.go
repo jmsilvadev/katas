@@ -1,10 +1,10 @@
-package kataswithencapsulation
+package katas02withencapsulation
 
 import (
-	"github.com/jmsilvadev/cycloid/katas_with_encapsulation/internal/iterable"
-	"github.com/jmsilvadev/cycloid/katas_with_encapsulation/internal/recursive"
-	recursivereference "github.com/jmsilvadev/cycloid/katas_with_encapsulation/internal/recursive_reference"
-	slicerecursive "github.com/jmsilvadev/cycloid/katas_with_encapsulation/internal/slice_recursive"
+	"github.com/jmsilvadev/cycloid/katas02_with_encapsulation/internal/iterable"
+	"github.com/jmsilvadev/cycloid/katas02_with_encapsulation/internal/recursive"
+	recursivereference "github.com/jmsilvadev/cycloid/katas02_with_encapsulation/internal/recursive_reference"
+	slicerecursive "github.com/jmsilvadev/cycloid/katas02_with_encapsulation/internal/slice_recursive"
 )
 
 //IKata02 Kata interface to implements methods to manipulate kata structures

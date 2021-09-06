@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: up rebuild down ssh test test.coverage build logs docker-cleanup help lint vet fmt deps vendor
+.PHONY: up rebuild down ssh test test.coverage build logs docker-cleanup help lint vet fmt deps vendor doc
 
 DOCKER_C := docker-compose
 DOCKER_RUN := docker-compose run 
@@ -20,33 +20,44 @@ down: ## Stop docker container
 
 ssh: ## Interactive access to container
 	$(DOCKER_RUN) --entrypoint="/bin/sh" $(APP_NAME)
+	$(DOCKER_C) down --remove-orphans
 
 deps: ## Install dependencies
 	$(DOCKER_RUN) --entrypoint="go mod download" $(APP_NAME)
+	$(DOCKER_C) down --remove-orphans
 
 vendor: ## Install vendor
 	$(DOCKER_RUN) --entrypoint="go mod vendor" $(APP_NAME)
+	$(DOCKER_C) down --remove-orphans
 
 lint: ## Checks Code Style
 	$(DOCKER_RUN) --entrypoint="./run-lint.sh" $(APP_NAME)
+	$(DOCKER_C) down --remove-orphans
 
 vet: ## Finds issues in code
 	$(DOCKER_RUN) --entrypoint="go vet ./..." $(APP_NAME)
+	$(DOCKER_C) down --remove-orphans
 
 fmt: ## Applies standard formatting
 	$(DOCKER_RUN) --entrypoint="go fmt ./..." $(APP_NAME)
+	$(DOCKER_C) down --remove-orphans
 
 doc: ## Show package documentation
-	$(DOCKER_RUN) --entrypoint="go doc github.com/jmsilvadev/cycloid/katas" $(APP_NAME)
+	$(DOCKER_RUN) --entrypoint="go doc github.com/jmsilvadev/cycloid/katas02" $(APP_NAME)
+	$(DOCKER_RUN) --entrypoint="go doc github.com/jmsilvadev/cycloid/katas02_with_encapsulation" $(APP_NAME)
+	$(DOCKER_RUN) --entrypoint="go doc github.com/jmsilvadev/cycloid/katas19" $(APP_NAME)
+	$(DOCKER_C) down --remove-orphans
 
 test: ## Run all available tests
 	$(DOCKER_RUN) --entrypoint="./run-tests.sh" $(APP_NAME)
+	$(DOCKER_C) down --remove-orphans
 
 test.coverage: ## Check project test coverage
 	$(DOCKER_RUN) --entrypoint="./run-tests.sh" $(APP_NAME)
 	open $(OUTPUT_COVERAGE)coverage.html >&- 2>&- || \
 	xdg-open $(OUTPUT_COVERAGE)coverage.html >&- 2>&- || \
 	gnome-open $(OUTPUT_COVERAGE)coverage.html >&- 2>&-
+	$(DOCKER_C) down --remove-orphans
 
 build: ## Build docker image in daemon mode
 	$(DOCKER_C) build
