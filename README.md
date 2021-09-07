@@ -28,8 +28,9 @@ The semver system uses the angular commit message model [Angular Commit Message 
 To facilitate the developers' work, a Makefile with containerized commands was created.
 
 ```bash
-➜  interview-accountapi~$ make help
-build                          Build docker image
+$ make      
+benchmark                      Run benchmark tests
+build                          Build docker image in daemon mode
 deps                           Install dependencies
 doc                            Show package documentation
 down                           Stop docker container
@@ -40,7 +41,7 @@ rebuild                        Rebuild docker container
 ssh                            Interactive access to container
 test.coverage                  Check project test coverage
 test                           Run all available tests
-up                             Start docker container in daemon mode
+up                             Start docker container
 vendor                         Install vendor
 vet                            Finds issues in code
 
