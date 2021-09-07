@@ -1,4 +1,4 @@
-[![Quality And Tests](https://github.com/jmsilvadev/cycloid/actions/workflows/pull-requests.yml/badge.svg?branch=master)](https://github.com/jmsilvadev/cycloid/actions/workflows/pull-requests.yml)
+[![Quality And Tests](https://github.com/jmsilvadev/cycloid/actions/workflows/pull-requests.yml/badge.svg)](https://github.com/jmsilvadev/cycloid/actions/workflows/pull-requests.yml)
 [![Release](https://github.com/jmsilvadev/cycloid/actions/workflows/release.yml/badge.svg?branch=master)](https://github.com/jmsilvadev/cycloid/actions/workflows/release.yml)
 
 ## Introduction
