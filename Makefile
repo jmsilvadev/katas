@@ -48,6 +48,10 @@ doc: ## Show package documentation
 	$(DOCKER_RUN) --entrypoint="go doc github.com/jmsilvadev/cycloid/katas19" $(APP_NAME)
 	$(DOCKER_C) down --remove-orphans
 
+benchmark: ## Run benchmark tests
+	$(DOCKER_RUN) --entrypoint="./run-bench.sh" $(APP_NAME)
+	$(DOCKER_C) down --remove-orphans
+
 test: ## Run all available tests
 	$(DOCKER_RUN) --entrypoint="./run-tests.sh" $(APP_NAME)
 	$(DOCKER_C) down --remove-orphans
