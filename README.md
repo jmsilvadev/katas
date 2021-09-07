@@ -1,9 +1,11 @@
-[![Quality And Tests](https://github.com/jmsilvadev/cycloid/actions/workflows/pull-requests.yml/badge.svg)](https://github.com/jmsilvadev/cycloid/actions/workflows/pull-requests.yml)
+[![Quality And Tests](https://github.com/jmsilvadev/cycloid/actions/workflows/pull-requests.yml/badge.svg?branch=master)](https://github.com/jmsilvadev/cycloid/actions/workflows/pull-requests.yml)
 [![Release](https://github.com/jmsilvadev/cycloid/actions/workflows/release.yml/badge.svg?branch=master)](https://github.com/jmsilvadev/cycloid/actions/workflows/release.yml)
 
 ## Introduction
 
 The main focus in the package design was to provide a clear solution with a consumer focus and a code with quality and estability, this means that it should provide a clear and simple solution to use. To achieve this, the SOLID standard of single responsibility was followed, all the business logic was encapsulated, having public visibility only of the methods that the consumer needs to use. To grant the quality was use tools of code style and automated tests with 100% of coverage and tests scenarios to prevent known and minimize unkown flaws.
+
+The idea was to create packages to be reused instead of creating compiled binaries for it. With packages users can easily create their binaries in a simple way using `go build`.
 
 ## Important Note
 
@@ -46,8 +48,59 @@ vet                            Finds issues in code
 
 ## Packages
 
-In progress
+1. Kata02: Package katas02 is a library that contains methods to solve the Kata02 problem, [Karate Chop](http://codekata.com/kata/kata02-karate-chop/).
+
+2. Katas02 Encapsulation: Package katas02withencapsulation is a library that contains methods to solve the Kata02 problem, [Karate Chop](http://codekata.com/kata/kata02-karate-chop/). This library uses concepts of OOP and SOLID to implement best practices of programming.
+
+3. Katas19: Package katas19 is a library that contains methods to solve the Kata19 problem, [Word Chains](http://codekata.com/kata/kata19-word-chains/).
 
 ### Usage
 
-In progress
+#### Kata02
+
+- Instantiate the type of binary search and call the Chop method:
+
+```bash
+pos := iterable.Chop(5, []int{1, 3, 5})
+```
+
+- Types of binary search:
+
+```bash
+iterable: pos := iterable.Chop(5, []int{1, 3, 5})
+recursive: pos = recursive.Chop(5, []int{1, 3, 5})
+recursivereference: pos = recursivereference.Chop(5, []int{1, 3, 5})
+slicerecursive: pos = slicerecursive.Chop(5, []int{1, 3, 5})
+```
+
+#### Kata02 With Encapsulation
+
+- Instantiate the object of binary search and call the Chop method:
+
+```bash
+k := kataswithinternals.NewIterable()
+pos := k.Chop(5, []int{1, 3, 5})
+```
+
+- Types of binary search:
+
+```bash
+iterable: k := kataswithinternals.NewIterable()
+recursive: k := kataswithinternals.NewRecursive()
+recursivereference: k := kataswithinternals.NewRecursiveReference()
+slicerecursive: k := kataswithinternals.NewRecursiveSlice()
+```
+
+#### Kata19
+
+- Set the path of the dictionary to be used:
+
+```bash
+pathToDictionary, _ := filepath.Abs("../../../storage/wordlist.txt")
+```
+
+- Instantiate the wordschain package and call the Discover method with the subject, target and path to dictionary:
+
+```bash
+chain, _ := wordschain.Discover("the", "end", pathToDictionary)
+```
