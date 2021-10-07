@@ -11,8 +11,6 @@ The idea was to create packages to be reused instead of creating compiled binari
 
 I would like to inform that I created explanatory videos with the step-by-step creation of Kata02, my goal is to show my logic and skills in a didactic way so that can evaluate my profile with more information, not only technical, but also my soft skills.
 
-I'd love it if the reviewers watched the videos, even at 2x speed, because I'm looking for a company that values ​​professionals and that always have attention to their opinions and efforts, and someone watching the videos, even if I don't have the profile for the company, will demonstrate that the company are on the right path in terms of valuing the professionals who are there.
-
 Videos can be seen in this list [VIDEOLOG](VIDEOS.md)
 
 ## CI/CD And SemVer
