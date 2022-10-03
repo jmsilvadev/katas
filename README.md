@@ -7,12 +7,6 @@ The main focus in the package design was to provide a clear solution with a cons
 
 The idea was to create packages to be reused instead of creating compiled binaries for it. With packages users can easily create their binaries in a simple way using `go build`.
 
-## Important Note
-
-I would like to inform that I created explanatory videos with the step-by-step creation of Kata02, my goal is to show my logic and skills in a didactic way so that can evaluate my profile with more information, not only technical, but also my soft skills.
-
-Videos can be seen in this list [VIDEOLOG](VIDEOS.md)
-
 ## CI/CD And SemVer
 
 The project uses the Devops concept of continuous integration and continuous delivery through pipelines. To guarantee the CI there is a check inside the pipelines that checks the code quality and runs all the tests. This process generates an artifact that can be viewed and analyzed by developers.
