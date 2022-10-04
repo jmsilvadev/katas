@@ -97,3 +97,4 @@ pathToDictionary, _ := filepath.Abs("../../../storage/wordlist.txt")
 ```bash
 chain, _ := wordschain.Discover("the", "end", pathToDictionary)
 ```
+
